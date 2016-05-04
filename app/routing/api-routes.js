@@ -2,7 +2,6 @@
 // ==========================================================
 
 	//DEPENDENCIES
-		var path = require('path');
 		var friendList = require('../data/friends.js');
 
 
