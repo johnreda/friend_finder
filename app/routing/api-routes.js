@@ -3,7 +3,7 @@
 
 	//DEPENDENCIES
 		var friendList = require('../data/friends.js');
-		var userData = require('../public/survey.html');
+
 
 
 
@@ -24,6 +24,20 @@
 		// Note the code here. Our "server" will respond to requests and let users know if they have a table or not.
 		// It will do this by sending out the value "true" have a table 
 
+		//CODE OUT THE COMPARISON HERE
+		var user = req.body;
+		var name = req.body.name;
+		var img = req.body.photo;
+
+		var userScores = req.body.scores;
+			console.log(userScores);
+
+		var userScores1 = req.body.scores[0];
+			console.log("User Score 1: " + userScores1);
+
+		for (var i = 0; i < friendList.length; i++) {
+			console.log(friendList[i].scores);
+		};
 
 
 			friendList.push(req.body);
