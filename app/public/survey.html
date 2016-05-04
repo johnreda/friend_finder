@@ -269,7 +269,8 @@ $('#submitButton').on('click', function(){
 		console.log(userPhoto);
 
 	//SURVEY ANSWERS
-	var ans1 = parseInt($( "#quest1 option:selected" ).val());
+	var ans1 = $( "#quest1 option:selected" ).val();
+		parseInt(ans1);
 	console.log(ans1);
 
 	var ans2 = parseInt($( "#quest2 option:selected" ).val());
@@ -308,6 +309,7 @@ $('#submitButton').on('click', function(){
 		scores: [ans1, ans2, ans3, ans4, ans5, ans6, ans7, ans8, ans9, ans10]
 	}
 		//console.log("User " + userData.name);
+		module.exports = userData;
 
 	var currentURL = window.location.origin;
 

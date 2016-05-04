@@ -3,6 +3,7 @@
 
 	//DEPENDENCIES
 		var friendList = require('../data/friends.js');
+		var userData = require('../public/survey.html');
 
 
 
@@ -22,6 +23,8 @@
 
 		// Note the code here. Our "server" will respond to requests and let users know if they have a table or not.
 		// It will do this by sending out the value "true" have a table 
+
+
 
 			friendList.push(req.body);
 			res.json(true); // KEY LINE
